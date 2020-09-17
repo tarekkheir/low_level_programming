@@ -7,9 +7,9 @@
 int main(void)
 {
 int a = 97;
-for (a = 97; a <= 112; a++)
+for (a = 97; a <= 122; a++)
 {
-if (a == 101)
+if (a == 101 || a == 113)
 {
 a = a + 1 - 1;
 }
@@ -18,10 +18,7 @@ else
 putchar((char)a);
 }
 }
-for (a = 114; a <= 122; a++)
-{
-putchar((char)a);
-}
+
 putchar('\n');
 return (0);
 }
