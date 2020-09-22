@@ -1,0 +1,19 @@
+#include "holberton.h"
+/**
+ *
+ *_abs -check code
+ *
+ *Return: always 0
+ */
+int _abs(int r)
+{
+	if (r < 0)
+	{
+		return (-n);
+	}
+
+	else if (r > 0)
+	{
+		r = r;
+	}
+}

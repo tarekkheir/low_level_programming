@@ -1,0 +1,35 @@
+#include "holberton.h"
+
+/**
+ * print_last_digit - check the code for Holberton School students.
+ *@a: letter that we use
+ * Return: Always 0.
+ */
+int print_last_digit(int a)
+{
+	if (lastdigit > 5)
+
+	{
+
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit);
+
+	}
+
+	else if (lastdigit == 0)
+
+	{
+
+		printf("Last digit of %d is %d and is 0\n", n, lastdigit);
+
+	}
+
+	else if (lastdigit < 6 && lastdigit != 0)
+
+	{
+
+		_putchar(
+
+	}
+
+	return (a);
+
