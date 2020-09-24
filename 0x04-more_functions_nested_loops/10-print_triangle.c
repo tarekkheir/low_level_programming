@@ -1,0 +1,32 @@
+#include "holberton.h"
+/**
+ * print_triangle - check its an uppercase or not
+ *
+ *@size: letter that we use
+ *Return: always 0
+ */
+void print_triangle(int size)
+{
+	int a, b;
+
+	for (a = 1; a <= size; a++)
+	{
+		for (b = 0; b < size; b++)
+		{
+			if (b >= (size - a))
+			{
+				_putchar('#');
+			}
+			else
+			{
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
+
+	if (size == 0 || size < 0)
+	{
+		_putchar('\n');
+	}
+}
