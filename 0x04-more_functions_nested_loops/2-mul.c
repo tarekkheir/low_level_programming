@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * _isupper - check its an uppercase or not
+ * mul - check its an uppercase or not
  *
- *@c: letter that we use
+ *@a: letter that we use
+ *@b: letter that we use
  *Return: always 0
  */
 int mul(int a, int b)
