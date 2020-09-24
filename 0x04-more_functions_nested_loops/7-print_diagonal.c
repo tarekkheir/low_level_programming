@@ -16,14 +16,17 @@ void print_diagonal(int n)
 		{
 			for (b = 0; b <= a; b++)
 			{
-				_putchar(' ');
+				if (b != 0)
+				{
+					_putchar(' ');
+				}
 			}
 			_putchar('\\');
 			_putchar('\n');
 		}
 	}
 
-	if (n == 0 || n < 0)
+	else
 	{
 		_putchar('\n');
 	}
