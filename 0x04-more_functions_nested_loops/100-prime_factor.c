@@ -1,0 +1,25 @@
+#include "holberton.h"
+/**
+ * main - check
+ *Return: Always 0
+ */
+int main(void)
+{
+	long a = 1231952;
+	long n = 2;
+
+	while (n < a)
+	{
+		while (!(a % n))
+			a = a / n;
+		if (n == 2)
+		{
+			n = 1;
+		}
+		n = n + 2;
+		printf("%li\n", n);
+	}
+
+	printf("%li\n", n);
+	return (0);
+}
