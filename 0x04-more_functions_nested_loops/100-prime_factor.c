@@ -17,7 +17,6 @@ int main(void)
 			n = 1;
 		}
 		n = n + 2;
-		printf("%li\n", n);
 	}
 
 	printf("%li\n", n);
