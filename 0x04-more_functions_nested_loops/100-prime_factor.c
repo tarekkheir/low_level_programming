@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long a = 1231952;
+	long a = 612852475143;
 	long n = 2;
 
 	while (n < a)
