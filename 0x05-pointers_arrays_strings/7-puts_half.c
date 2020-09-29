@@ -12,11 +12,13 @@ void puts_half(char *str)
 	{
 		puts++;
 	}
-	half = puts / 2;
-
-	if (puts % 2 != 0)
+	if ((puts % 2) != 0)
 	{
 		half = (puts - 1) / 2;
+	}
+	if ((puts % 2 == 0))
+	{
+		half = puts / 2;
 	}
 	while (str[half] != '\0')
 	{
