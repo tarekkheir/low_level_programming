@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *print_array
+ *print_array - check code
  *@a: letter that we use
  *@n: letter that we use
  */
