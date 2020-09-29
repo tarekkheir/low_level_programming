@@ -12,6 +12,5 @@ void puts2(char *str)
 		_putchar(str[puts]);
 		puts += 2;
 	}
-	printf("%d", puts);
 	_putchar('\n');
 }
