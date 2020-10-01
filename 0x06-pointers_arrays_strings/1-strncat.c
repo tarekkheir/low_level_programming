@@ -1,0 +1,30 @@
+#include "holberton.h"
+/**
+ *_strncat - check code
+ *@dest: letter
+ *@src: letter
+ *@n: letter
+ *Return: 1
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	int x = 0;
+	int nb = 0;
+	int count = 0;
+
+	while (dest[x] != '\0')
+	{
+		x++;
+	}
+	while (src[nb] != '\0')
+	{
+		nb++;
+	}
+	while (count <= nb && count < n)
+	{
+		dest[count + x] = src[count];
+		count++;
+	}
+	dest[count + x] = '\0';
+	return (dest);
+}
