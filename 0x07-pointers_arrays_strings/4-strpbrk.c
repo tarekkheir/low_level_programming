@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *strpbrk - check code
+ *_strpbrk - check code
  *@s: letter
  *@accept: letter
  *Return: value

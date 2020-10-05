@@ -8,22 +8,22 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
-        int j;
+	int j;
 	int tmp;
 
 	i = 0;
 	tmp = 0;
-        while (haystack[i])
-        {
-                j = 0;
+	while (haystack[i])
+	{
+		j = 0;
 		tmp = i;
-                while (needle[j] == haystack[i])
-                {
+		while (needle[j] == haystack[i])
+		{
 			return (&haystack[tmp]);
-                        j++;
-                }
+			j++;
+		}
 
-                i++;
-        }
-        return (0);
+		i++;
+	}
+	return (0);
 }
