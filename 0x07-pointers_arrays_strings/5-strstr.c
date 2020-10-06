@@ -18,8 +18,8 @@ char *_strstr(char *haystack, char *needle)
 
 		while (haystack[i] == needle[j])
 		{
-				j++;
-				i++;
+			i++;
+			j++;
 		}
 
 		i = tmp;
