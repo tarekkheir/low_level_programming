@@ -3,6 +3,7 @@
  *_pow_recursion - check code
  *@x: letter
  *@y: letter
+ *Return: value
  */
 int _pow_recursion(int x, int y)
 {
