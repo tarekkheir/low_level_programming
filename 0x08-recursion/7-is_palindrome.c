@@ -25,7 +25,7 @@ int strlen_palindrome(char *str)
  */
 int rev(char *a, int n, int i)
 {
-	if (n != i)
+	if (n > i)
 	{
 		if (a[n] == a[i])
 		{
@@ -50,5 +50,9 @@ int is_palindrome(char *s)
 	int size;
 
 	size = strlen_palindrome(s);
+	if (size == 0 || size == 1)
+	{
+		return (1);
+	}
 	return (rev(s, size - 1, 0));
 }
