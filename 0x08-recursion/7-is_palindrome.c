@@ -25,8 +25,6 @@ int strlen_palindrome(char *str)
  */
 int rev(char *a, int n, int i)
 {
-	printf("a[i] : %c\n", a[i]);
-	printf("a[n] : %c\n", a[n]);
 	if (n != i)
 	{
 		if (a[n] == a[i])
