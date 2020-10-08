@@ -25,20 +25,17 @@ int strlen_palindrome(char *str)
  */
 int rev(char *a, int n, int i)
 {
-	if (n > i)
+	if (i > n)
 	{
-		if (a[n] == a[i])
-		{
-			return (1);
-		}
-		if (a[n] != a[i])
-		{
-			return (0);
-		}
+		return (1);
 	}
-		n--;
-		i++;
-		return (rev(a, n, i));
+	if (a[i] != a[n])
+	{
+		return (0);
+	}
+	n--;
+	i++;
+	return (rev(a, n, i));
 }
 /**
  *is_palindrome - check code
@@ -49,10 +46,10 @@ int is_palindrome(char *s)
 {
 	int size;
 
-	size = strlen_palindrome(s);
+	size = strlen_palindrome(s) - 1;
 	if (size == 0 || size == 1)
 	{
 		return (1);
 	}
-	return (rev(s, size - 1, 0));
+	return (rev(s, size, 0));
 }
