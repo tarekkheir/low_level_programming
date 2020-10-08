@@ -9,17 +9,14 @@ void puts_half(char *str)
 	int half;
 
 	while (str[puts] != '\0')
-	{
 		puts++;
-	}
-	if ((puts % 2) != 0)
-	{
+
+	if (puts % 2 != 0)
 		half = (puts - 1) / 2;
-	}
-	if ((puts % 2 == 0))
-	{
+
+	else
 		half = puts / 2;
-	}
+
 	while (str[half] != '\0')
 	{
 		_putchar(str[half]);

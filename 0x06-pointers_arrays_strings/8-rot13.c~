@@ -1,0 +1,8 @@
+#include "holberton.h"
+/**
+ *rot13 - check code
+ *@s: letter
+ *Return: value
+ */
+char *rot13(char *)
+{
