@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	while (a < argc)
 	{
-		if (!atoi(argv[a]))
+		if (!atoi(argv[a]) || atoi(argv[a]) == 0)
 		{
 			printf("Error\n");
 			return (1);
