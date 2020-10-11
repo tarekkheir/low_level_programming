@@ -9,16 +9,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int tmp = 0;
+	int tmp;
 	int a = 1;
 
 	while (a < argc)
 	{
-		if (! atoi(argv[a]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+		if (!atoi(argv[a]))
+		{
+			printf("Error\n");
+			return (1);
+		}
 
 		if (atoi(argv[a]) >= 0)
 		{
