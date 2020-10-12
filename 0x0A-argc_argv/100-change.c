@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 		if (par < 0)
 		{
 			printf("0\n");
+			return (0);
 		}
 
 		while (par > 0)
