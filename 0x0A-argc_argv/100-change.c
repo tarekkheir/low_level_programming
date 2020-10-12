@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 			printf("0\n");
 		}
 
-		while (par != 0)
+		while (par > 0)
 		{
 			if (par >= 25)
 			{
