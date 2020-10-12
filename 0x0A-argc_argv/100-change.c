@@ -21,7 +21,10 @@ int main(int argc, char *argv[])
 		par = atoi(argv[1]);
 
 		if (par < 0)
+		{
 			printf("0\n");
+			return (0);
+		}
 		while (par > 0)
 		{
 			if (par >= 25)
