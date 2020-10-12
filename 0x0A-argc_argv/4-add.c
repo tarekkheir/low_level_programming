@@ -9,24 +9,29 @@
  */
 int main(int argc, char *argv[])
 {
-	int tmp;
+	int tmp = 0;
 	int a = 0;
 	int b = 0;
 
-	while (a < argc)
+	if (argc < 2)
+        {
+                printf("0\n");
+                return (1);
+        }
+	else if (argc > 1)
 	{
-		if (argv[a][b] < '0' || argv[a][b] > '9')
+		for (a = 1; a < argc; a++)
 		{
-			printf("Error\n");
-			return (1);
-		}
-
-		if (argc > 1)
-		{
+			for (a = 0; argv[a][b]; b++)
+			{
+				if (argv[a][b] < '0' || argv[a][b] > '9')
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 			tmp += atoi(argv[a]);
 		}
-		a++;
-		b++;
 	}
 	printf("%d\n", tmp);
 	return (0);
