@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
 		}
 
 		printf("%d\n", res);
+		return (0);
 
 	}
 	else
@@ -49,5 +50,4 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (1);
 	}
-	return (0);
 }
