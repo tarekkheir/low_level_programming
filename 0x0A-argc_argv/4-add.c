@@ -10,21 +10,23 @@
 int main(int argc, char *argv[])
 {
 	int tmp;
-	int a = 1;
+	int a = 0;
+	int b = 0;
 
 	while (a < argc)
 	{
-		if (!atoi(argv[a]) && atoi(argv[a]) == 0)
+		if (argv[a][b] < '0' || argv[a][b] > '9')
 		{
 			printf("Error\n");
 			return (1);
 		}
 
-		if (atoi(argv[a]) >= 0)
+		if (argc > 1)
 		{
 			tmp += atoi(argv[a]);
 		}
 		a++;
+		b++;
 	}
 	printf("%d\n", tmp);
 	return (0);
