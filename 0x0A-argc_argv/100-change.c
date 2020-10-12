@@ -14,14 +14,12 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		par = atoi(argv[1]);
-
 		while (par > 0)
 		{
 			if (par >= 25)
 			{
 				par -= 25;
 			}
-
 			if (par >= 10)
 			{
 				par -= 10;
@@ -40,10 +38,8 @@ int main(int argc, char *argv[])
 			}
 			res++;
 		}
-
 		printf("%d\n", res);
 		return (0);
-
 	}
 	else
 	{
