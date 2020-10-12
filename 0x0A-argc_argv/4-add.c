@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 /**
  *main - check code
@@ -13,25 +12,26 @@ int main(int argc, char *argv[])
 	int a = 0;
 	int b = 0;
 
-	if (argc < 2)
-        {
-                printf("0\n");
-                return (1);
-        }
-	else if (argc > 1)
+	if (argc == 1)
 	{
-		for (a = 1; a < argc; a++)
+		printf("0\n");
+		return (1);
+	}
+	a++;
+	while (a < argc)
+	{
+		b = 1;
+		while (argv[a][b])
 		{
-			for (a = 0; argv[a][b]; b++)
+			if (argv[a][b] < '0' || argv[a][b] > '9')
 			{
-				if (argv[a][b] < '0' || argv[a][b] > '9')
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			tmp += atoi(argv[a]);
+			b++;
 		}
+		tmp += atoi(argv[a]);
+		a++;
 	}
 	printf("%d\n", tmp);
 	return (0);
