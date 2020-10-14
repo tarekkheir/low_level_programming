@@ -40,6 +40,10 @@ char *str_concat(char *s1, char *s2)
 	if (size_total > 0)
 	{
 		res = malloc(sizeof(char) * size_total);
+		if (res == NULL)
+		{
+			return (NULL);
+		}
 		if (size_total != 1)
 		{
 
