@@ -9,6 +9,10 @@ int _strlen(char *s)
 {
 	int size = 0;
 
+	if (s == NULL)
+	{
+		return (0);
+	}
 	while (s[size] != '\0')
 	{
 		size++;
@@ -31,23 +35,23 @@ char *str_concat(char *s1, char *s2)
 
 	size_s1 = _strlen(s1);
 	size_s2 = _strlen(s2);
-	size_total = size_s1 + size_s2;
+	size_total = size_s1 + size_s2 + 1;
 
-	if (s1 != NULL && s2 != NULL)
+	if (size_total > 0)
 	{
 		res = malloc(sizeof(char) * size_total);
-
-		while (b < size_total)
+		while (b < size_s1)
 		{
-			while (b < size_s1)
-			{
-				res[b] = s1[b];
-				b++;
-			}
+			res[b] = s1[b];
+			b++;
+		}
+		while (b < size_total - 1)
+		{
 			res[b] = s2[a];
 			a++;
 			b++;
 		}
+		res[b] = '\0';
 		return (res);
 	}
 	else
