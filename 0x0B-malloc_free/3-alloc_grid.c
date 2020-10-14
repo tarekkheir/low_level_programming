@@ -16,7 +16,9 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
+
 	tab = malloc(sizeof(int *) * height);
+
 	if (tab == NULL)
 	{
 		return (NULL);
@@ -28,6 +30,13 @@ int **alloc_grid(int width, int height)
 
 		if (tab[a] == NULL)
 		{
+			b = 0;
+			while (b < a)
+			{
+				free(tab[b]);
+				b++;
+			}
+			free(tab);
 			return (NULL);
 		}
 
