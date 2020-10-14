@@ -28,7 +28,10 @@ int _strlen(char *s)
  */
 char *argstostr(int ac, char **av)
 {
-	int i, tmp, a, j = 0;
+	int j = 0;
+	int i = 0;
+	int tmp = 0;
+	int a = 0;
 	char *tab;
 
 	if (ac == 0 || av == NULL)
@@ -52,12 +55,16 @@ char *argstostr(int ac, char **av)
 
 	while (i < ac)
 	{
-		while (av[i][j] != '\0')
+		j = 0;
+		while (j < _strlen(av[i]))
 		{
-			tab[a++] = av[i][j++];
+			tab[a] = av[i][j];
+			j++;
+			a++;
 		}
-		tab[a++] = '\n';
+		tab[a] = '\n';
 		i++;
+		a++;
 	}
 	tab[a] = '\0';
 	return (tab);
