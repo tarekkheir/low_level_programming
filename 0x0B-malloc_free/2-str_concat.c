@@ -40,16 +40,20 @@ char *str_concat(char *s1, char *s2)
 	if (size_total > 0)
 	{
 		res = malloc(sizeof(char) * size_total);
-		while (b < size_s1)
+		if (s1 != NULL && s2 != NULL)
 		{
-			res[b] = s1[b];
-			b++;
-		}
-		while (b < size_total - 1)
-		{
-			res[b] = s2[a];
-			a++;
-			b++;
+
+			while (b < size_s1)
+			{
+				res[b] = s1[b];
+				b++;
+			}
+			while (b < size_total - 1)
+			{
+				res[b] = s2[a];
+					a++;
+					b++;
+			}
 		}
 		res[b] = '\0';
 		return (res);
