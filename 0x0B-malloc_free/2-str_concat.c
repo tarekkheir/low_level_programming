@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 	if (size_total > 0)
 	{
 		res = malloc(sizeof(char) * size_total);
-		if (s1 != NULL && s2 != NULL)
+		if (size_total != 1)
 		{
 
 			while (b < size_s1)
