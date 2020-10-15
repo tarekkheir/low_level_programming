@@ -10,14 +10,14 @@
 int *array_range(int min, int max)
 {
 	int *tab;
-	int i;
+	int i, size;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
-
-	tab = malloc(sizeof(int) * (max + 1));
+	size = max - min + 1;
+	tab = malloc(sizeof(int) * size);
 	if (tab == NULL)
 	{
 		return (NULL);
