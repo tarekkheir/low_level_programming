@@ -53,13 +53,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	j = 0;
-	while (i < size_total)
+	while (i < size_total - 1)
 	{
 		tab[i] = s2[j];
 		i++;
 		j++;
 	}
-	i--;
 	tab[i] = '\0';
 	return (tab);
 }
