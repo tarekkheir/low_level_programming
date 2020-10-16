@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- *
- *
+ * print_number - check code
+ *@n: letter
+ *Return: no
  */
 void print_number(int n)
 {
