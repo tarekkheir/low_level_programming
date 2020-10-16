@@ -7,30 +7,28 @@
  */
 int main(void)
 {
-	int a, b, c, d = '0';
+	int i, j;
 
-	while (a < b && b < c && c < d)
+	while (i < 100)
 	{
-	for (a = '0'; a <= '9'; a++)
-	{
-	for (b = '0'; b <= '9'; b++)
-	{
-	for (c = '0'; c <= '9'; c++)
-	{
-		for (d = '0'; d <= '9'; d++)
+		while (j < 100)
 		{
-			putchar(a);
-			putchar(b);
-			putchar(' ');
-			putchar(c);
-			putchar(d);
-			putchar(',');
-			putchar(' ');
-
+			if (i < j)
+			{
+				putchar('0' + i / 10);
+				putchar('0' + i % 10);
+				putchar(' ');
+				putchar('0' + j / 10);
+				putchar('0' + j % 10);
+			}
+			if (i != 0 || j != 0)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			j++;
 		}
-	}
-	}
-	}
+		i++;
 	}
 	putchar('\n');
 	return (0);
