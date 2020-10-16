@@ -7,11 +7,12 @@
  */
 int main(void)
 {
-	int i, j;
+	int i;
+	int j;
 
-	while (i < 100)
+	for (i = 0; i < 100; i++)
 	{
-		while (j < 100)
+		for (j = 0; j < 100; j++)
 		{
 			if (i < j)
 			{
@@ -20,15 +21,15 @@ int main(void)
 				putchar(' ');
 				putchar('0' + j / 10);
 				putchar('0' + j % 10);
+
+				if (i != 98)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
 			}
-			if (i != 0 || j != 0)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
