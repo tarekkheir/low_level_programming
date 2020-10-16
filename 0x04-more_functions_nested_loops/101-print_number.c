@@ -5,29 +5,27 @@
  */
 void print_number(int n)
 {
-	int a;
+	int i;
+	int j = 1;
 
-	if (n < 0)
+	while (n / j >= 10 || n / j <= -10)
+		j *= 10;
+
+	while (j > 0)
 	{
-		a = -n;
-		_putchar('-');
-		_putchar('0' + a);
+		i = n / j;
+		if (i < 0)
+		{
+			_putchar('-');
+			_putchar('0' - i);
+			n = -(n - i * j);
+		}
+		else
+		{
+			_putchar('0' + i);
+			n = n - i * j;
+		}
+		j /= 10;
 	}
 
-	if ((n / 1000))
-	{
-		_putchar('0' + n / 1000);
-
-	if ((n / 100))
-	{
-		_putchar('0' + n / 100);
-	}
-
-	if ((n / 10))
-	{
-		_putchar('0' + n / 10);
-	}
-	}
-
-	_putchar('0' + n % 10);
 }
