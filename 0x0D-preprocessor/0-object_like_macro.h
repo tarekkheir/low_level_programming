@@ -1,0 +1,6 @@
+#ifndef HOLBERTON_PROJECT
+#define HOLBERTON_PROJECT
+
+#define SIZE 1024
+
+#endif
