@@ -1,4 +1,6 @@
 #include "function_pointers.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * int_index - check code
  * @array: letter
