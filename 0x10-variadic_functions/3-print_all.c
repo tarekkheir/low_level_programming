@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 			vide = ", ";
 			break;
 		case 'f':
-                        printf("%s", vide);
+			printf("%s", vide);
 			printf("%f", va_arg(arguments, double));
 			vide = ", ";
 			break;
