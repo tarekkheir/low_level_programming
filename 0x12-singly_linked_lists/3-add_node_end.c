@@ -1,5 +1,37 @@
 #include "lists.h"
 /**
+ *list_len - Count the list lenght
+ *@h: list
+ *Return: value
+ */
+size_t list_len(const list_t *h)
+{
+	int i = 0;
+
+	while (h)
+	{
+		i++;
+		h = h->next;
+	}
+	return (i);
+}
+/**
+ *_strlen - length of pointer
+ *
+ *@s: letter that we use
+ *Return: always 0
+ */
+unsigned int _strlen(const char *s)
+{
+	int size = 0;
+
+	while (s[size] != '\0')
+	{
+		size++;
+	}
+	return (size);
+}
+/**
  *add_node_end - add node at the end of the list
  *@head: list
  *@str: string
@@ -29,8 +61,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		cell->str = (strdup)str;
-		cell->len = strlen(str);
+		cell->str = strdup(str);
+		cell->len = _strlen(str);
 		cell->next = NULL;
 
 		*head = cell;
