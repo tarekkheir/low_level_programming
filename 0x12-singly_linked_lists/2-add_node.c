@@ -25,7 +25,10 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *cell = malloc(sizeof(cell));
 
-	cell->str = str;
+	if (cell == NULL)
+		return (NULL);
+
+	cell->str = (strdup)str;
 	cell->len = _strlen(str);
 	cell->next = *head;
 

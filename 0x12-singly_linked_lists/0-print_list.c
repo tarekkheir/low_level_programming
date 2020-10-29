@@ -1,13 +1,16 @@
 #include "lists.h"
 /**
- *printf_list - print list arguments
+ *print_list - print list arguments
  *@h: element to print
  *Return: value
  */
 size_t print_list(const list_t *h)
 {
+	int i = 0;
+
 	while (h)
 	{
+		i++;
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
