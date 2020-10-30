@@ -1,21 +1,5 @@
 #include "lists.h"
-/**
- *list_len - Count the list lenght
- *@h: list
- *Return: value
- */
-size_t list_len(const list_t *h)
-{
-	int i = 0;
-
-	while (h)
-	{
-		i++;
-		h = h->next;
-	}
-	return (i);
-}
-/**
+ /**
  *_strlen - length of pointer
  *
  *@s: letter that we use
@@ -40,33 +24,23 @@ unsigned int _strlen(const char *s)
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *cell = malloc(sizeof(cell));
-	unsigned int last = list_len(*head);
-	list_t *act = *head;
-	list_t *prec = *head;
-	unsigned int i = 0;
+	list_t *act;
 
-	printf("%u\n", last);
-	if (last > 1)
+	cell->str = strdup(str);
+	cell->len = _strlen(str);
+	cell->next = NULL;
+
+	act = *head;
+
+	if (*head)
 	{
-		printf("entrée dans if");
-		while (i < last)
-		{
-			i++;
-			prec = act;
+		while (act->next)
 			act = act->next;
-		}
-		prec->next = cell;
-		cell->next = act;
 
+		act->next = cell;
 	}
 	else
-	{
-		cell->str = strdup(str);
-		cell->len = _strlen(str);
-		cell->next = NULL;
-
 		*head = cell;
-	}
 
-	return (*head);
+	return (cell);
 }
