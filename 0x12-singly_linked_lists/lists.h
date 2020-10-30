@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ *struct element_t - type struct
+ *@str: string
+ *@len: length
+ *@next: point on next element
+ */
 typedef struct element_t
 {
 	char *str;
