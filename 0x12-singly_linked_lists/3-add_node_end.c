@@ -1,5 +1,5 @@
 #include "lists.h"
- /**
+/**
  *_strlen - length of pointer
  *
  *@s: letter that we use
@@ -30,6 +30,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	cell->len = _strlen(str);
 	cell->next = NULL;
 
+	if (cell == NULL)
+		return (NULL);
 	act = *head;
 
 	if (*head)
