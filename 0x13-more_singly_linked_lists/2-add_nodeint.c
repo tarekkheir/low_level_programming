@@ -11,7 +11,12 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *cur = *head;
 
 	cell->n = n;
-	cell->next = cur;
+
+	if (*head != NULL)
+		cell->next = cur;
+	else
+		cell->next = NULL;
+
 	*head = cell;
 
 	return (*head);
