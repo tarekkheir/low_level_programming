@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *pop_istint - delete node
+ *pop_listint - delete node
  *@head: list
  *Return: integer
  */

@@ -2,19 +2,19 @@
 /**
  *listint_len - length of list
  *@h: list
- *return: size
+ *Return: size
  */
 size_t listint_len(const listint_t *h)
 {
-        int i = 0;
+	int i = 0;
 
-        while (h)
-        {
-                i++;
-                h = h->next;
-        }
+	while (h)
+	{
+		i++;
+		h = h->next;
+	}
 
-        return (i);
+	return (i);
 }
 /**
  *delete_nodeint_at_index - as the function said
