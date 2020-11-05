@@ -1,12 +1,18 @@
 #include "holberton.h"
-unsigned int _pow(unsigned int n, int pow)
+/**
+ *_pow_binary - return the binary pow
+ *@n: integer
+ *@pow: pow of integer
+ *Return: integer
+ */
+unsigned int _pow_binary(unsigned int n, int pow)
 {
 	if (pow == 0)
 		return (1);
 	if (pow == 1)
 		return (n);
 	n = n * 2;
-	return (_pow(n, pow - 1));
+	return (_pow_binary(n, pow - 1));
 }
 /**
  *_strlen - length of pointer
@@ -48,7 +54,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (b[len] == 49)
 		{
-			result = result + _pow(2, pui);
+			result = result + _pow_binary(2, pui);
 			pui++;
 			len--;
 		}
