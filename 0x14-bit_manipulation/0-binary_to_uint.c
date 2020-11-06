@@ -41,6 +41,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	int len;
 
+	if (b == NULL)
+		return (0);
 	len = _strlen(b);
 	if (len == 0)
 		return (0);
