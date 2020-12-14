@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *free_list - free the list allocation
+ *free_dlistint - free the list allocation
  *@head: list
  *Return: value
  */

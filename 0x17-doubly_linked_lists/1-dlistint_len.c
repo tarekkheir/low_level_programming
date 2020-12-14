@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *list_len - Count the list lenght
+ *dlistint_len - Count the list lenght
  *@h: list
  *Return: value
  */

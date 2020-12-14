@@ -17,7 +17,7 @@ size_t listint_len(const dlistint_t *h)
 	return (i);
 }
 /**
- *delete_nodeint_at_index - as the function said
+ *delete_dnodeint_at_index - as the function said
  *@head: list
  *@index: index
  *Return: integer

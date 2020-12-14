@@ -17,7 +17,7 @@ size_t listint_len(const dlistint_t *h)
 	return (i);
 }
 /**
- *get_nodeint_at_index - as the name of function said
+ *get_dnodeint_at_index - as the name of function said
  *@head: list
  *@index: index
  *Return: list

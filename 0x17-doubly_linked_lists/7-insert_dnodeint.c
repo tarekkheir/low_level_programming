@@ -17,8 +17,8 @@ size_t listint_len(const dlistint_t *h)
 	return (i);
 }
 /**
- *insert_nodeint_at_index - read the name of function :)
- *@head: list
+ *insert_dnodeint_at_index - read the name of function :)
+ *@h: list
  *@idx: index
  *@n: node to insert
  *Return: list
