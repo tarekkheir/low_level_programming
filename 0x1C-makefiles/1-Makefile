@@ -3,5 +3,5 @@ SRC= $(wildcard *.c)
 
 all: compilation
 
-compilation:
+compilation: ${SRC}
 	${CC} ${SRC} -o holberton
