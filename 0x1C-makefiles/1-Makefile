@@ -3,5 +3,5 @@ SRC:= holberton.c main.c
 
 all: compilation
 
-compilation:
+compilation: ${SRC}
 	${CC} ${SRC} -o holberton
