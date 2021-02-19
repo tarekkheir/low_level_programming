@@ -6,4 +6,4 @@ NAME= holberton
 all: compilation
 
 compilation: ${OBJ}
-	${CC} -c ${OBJ} -o ${NAME}
+	${CC} ${OBJ} -o ${NAME}
