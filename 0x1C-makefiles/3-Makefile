@@ -11,11 +11,12 @@ compilation: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~
+	$(RM) $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
 
-re: all
+re: fclean compilation
