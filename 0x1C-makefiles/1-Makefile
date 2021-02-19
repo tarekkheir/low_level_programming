@@ -1,0 +1,7 @@
+CC= gcc
+SRC:= $(wildcard *.c)
+
+all: compilation
+
+compilation:
+	${CC} main.c holberton.c -o holberton
