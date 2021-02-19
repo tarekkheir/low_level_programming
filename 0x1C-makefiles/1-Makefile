@@ -1,7 +1,7 @@
 CC= gcc
-SRC= $(wildcard *.c)
+SRC= $(wildcard *.c) m.h
 
 all: compilation
 
-compilation: ${SRC}
+compilation:
 	${CC} ${SRC} -o holberton
